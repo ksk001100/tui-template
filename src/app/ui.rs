@@ -4,10 +4,8 @@ use crate::app::App;
 use tui::backend::Backend;
 use tui::layout::{Alignment, Constraint, Direction, Layout};
 use tui::style::{Color, Style};
-use tui::text::{Span};
-use tui::widgets::{
-    Block, BorderType, Borders, Cell, Paragraph, Row, Table, Wrap
-};
+use tui::text::Span;
+use tui::widgets::{Block, BorderType, Borders, Cell, Paragraph, Row, Table, Wrap};
 use tui::Frame;
 
 pub fn draw<B>(rect: &mut Frame<B>, app: &App)
