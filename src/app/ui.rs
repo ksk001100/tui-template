@@ -73,4 +73,10 @@ fn draw_body<'a>(_state: &AppState) -> Paragraph<'a> {
         .block(Block::default())
         .style(Style::default())
         .wrap(Wrap { trim: true })
+        .block(
+            Block::default()
+                .borders(Borders::ALL)
+                .style(Style::default())
+                .border_type(BorderType::Plain),
+        )
 }
