@@ -1,12 +1,12 @@
 use crate::app::state::AppState;
 use crate::app::Actions;
 use crate::app::App;
-use tui::backend::Backend;
-use tui::layout::{Alignment, Constraint, Direction, Layout};
-use tui::style::{Color, Style};
-use tui::text::Span;
-use tui::widgets::{Block, BorderType, Borders, Cell, Paragraph, Row, Table, Wrap};
-use tui::Frame;
+use ratatui::backend::Backend;
+use ratatui::layout::{Alignment, Constraint, Direction, Layout};
+use ratatui::style::{Color, Style};
+use ratatui::text::Span;
+use ratatui::widgets::{Block, BorderType, Borders, Cell, Paragraph, Row, Table, Wrap};
+use ratatui::Frame;
 
 pub fn draw<B>(rect: &mut Frame<B>, app: &App)
 where
